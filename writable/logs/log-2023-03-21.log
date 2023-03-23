@@ -1,0 +1,168 @@
+CRITICAL - 2023-03-21 03:53:18 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH\CodeIgniter.php on line 226.
+ 1 SYSTEMPATH\CodeIgniter.php(226): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH\CodeIgniter.php(190): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 FCPATH\index.php(55): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-03-21 03:54:30 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH\CodeIgniter.php on line 226.
+ 1 SYSTEMPATH\CodeIgniter.php(226): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH\CodeIgniter.php(190): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 FCPATH\index.php(55): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-03-21 03:30:14 --> Call to undefined function Config\post()
+in APPPATH\Config\Routes.php on line 34.
+ 1 SYSTEMPATH\Router\RouteCollection.php(267): require()
+ 2 SYSTEMPATH\CodeIgniter.php(802): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-21 03:32:53 --> Call to undefined function Config\post()
+in APPPATH\Config\Routes.php on line 34.
+ 1 SYSTEMPATH\Router\RouteCollection.php(267): require()
+ 2 SYSTEMPATH\CodeIgniter.php(802): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-21 03:32:56 --> Call to undefined function Config\post()
+in APPPATH\Config\Routes.php on line 34.
+ 1 SYSTEMPATH\Router\RouteCollection.php(267): require()
+ 2 SYSTEMPATH\CodeIgniter.php(802): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-21 03:33:04 --> Call to undefined function Config\post()
+in APPPATH\Config\Routes.php on line 34.
+ 1 SYSTEMPATH\Router\RouteCollection.php(267): require()
+ 2 SYSTEMPATH\CodeIgniter.php(802): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-21 03:33:13 --> Call to undefined function Config\post()
+in APPPATH\Config\Routes.php on line 34.
+ 1 SYSTEMPATH\Router\RouteCollection.php(267): require()
+ 2 SYSTEMPATH\CodeIgniter.php(802): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-21 06:09:57 --> mysqli_sql_exception: Unknown column 'passw' in 'where clause' in C:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\codeigniter\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\codeigniter\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeigniter\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\codeigniter\app\Controllers\Home.php(27): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Home->process('login')
+#8 C:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\codeigniter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-03-21 06:09:57 --> Unknown column 'passw' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+AND `passw` = :passw:', [...], false)
+ 2 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Home.php(27): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->process('login')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-21 06:11:57 --> mysqli_sql_exception: Unknown column 'passw' in 'where clause' in C:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\codeigniter\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\codeigniter\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeigniter\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\codeigniter\app\Controllers\Home.php(27): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Home->process('login')
+#8 C:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\codeigniter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-03-21 06:11:57 --> Unknown column 'passw' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+AND `passw` = :passw:', [...], false)
+ 2 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Home.php(27): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->process('login')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-21 06:13:58 --> mysqli_sql_exception: Unknown column 'passw' in 'where clause' in C:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\codeigniter\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\codeigniter\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeigniter\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\codeigniter\app\Controllers\Home.php(27): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Home->process('login')
+#8 C:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\codeigniter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-03-21 06:13:58 --> Unknown column 'passw' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+AND `passw` = :passw:', [...], false)
+ 2 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Home.php(27): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->process('login')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-21 06:35:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 06:35:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 06:35:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 06:38:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 06:38:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 06:38:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 06:38:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 06:38:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 06:38:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 06:39:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 06:39:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 06:39:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 06:39:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 06:39:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 06:39:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 06:39:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 06:40:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 06:40:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 06:40:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 06:40:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 06:40:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 06:40:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 06:40:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 06:40:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 06:41:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 06:41:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 06:41:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 06:41:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 06:41:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 06:41:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 06:41:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 06:41:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 06:42:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 06:42:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 06:42:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 06:42:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 06:45:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 06:45:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 06:45:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 06:45:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 06:45:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 06:45:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

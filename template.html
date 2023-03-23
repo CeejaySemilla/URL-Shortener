@@ -1,0 +1,202 @@
+<!-- ============================================ LOGIN HTML ============================================
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgb(219, 226, 226);
+        }
+        .row{
+            background-color: white;
+            border-radius: 30px;
+            box-shadow: 12px 12px 22px gray;
+        }
+        .btn1{
+            border: none;
+            outline: none;
+            height: 50px;
+            width: 100%;
+            background-color: black;
+            color: white;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        .btn1:hover{
+            background-color: white;
+            border: 1px solid;
+            color: black;
+        }
+    </style>
+  </head>
+  <body>
+    <section class="Form my-4 mx-5">
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="col-lg-4" style="background-image: url(loginBG.jpg);"></div>
+                <div class="col-lg-7 px-5 pt-5">
+                    <h1 class="font-weight-bold py-3">Semi-Bitly</h1>
+                    <h4>Registration Page</h4>
+
+                    <form method="post" action="http://localhost/codeigniter/public/process/registration">
+                        <div class="form-row">
+                            <input class="form-control my-3 p-3" type="text" name="regFullName" placeholder="Full name">
+                        </div>
+                        <div class="form-row">
+                            <input class="form-control my-3 p-3" type="text" name="regUsername" placeholder="Username">
+                        </div>
+                        <div class="form-row">
+                            <input class="form-control my-3 p-3" type="password" name="regPassword" placeholder="Password">
+                        </div>
+                        <div class="form-row">
+                            <input class="form-control my-3 p-3" type="text" name="verifyPassword" placeholder="Verify Password">
+                        </div>
+                        <div class="form-row">
+                            <button class="btn1 mt-3 mb-5" type="submit">Register</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="backlinks.png" width="32" height="32"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto ">
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 active" aria-current="page" href="#">Bitly!</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Account
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Accounts</a></li>
+                            <li><a class="dropdown-item" href="http://localhost/codeigniter/public/registration">Registration</a></li>
+                            <li><a class="dropdown-item" href="http://localhost/codeigniter/public/login">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post" action="http://localhost/codeigniter/public/process/update_user">
+        <div class="form-row">
+            <input type="hidden" name="id" value="<?php echo $edit_user['id'] ?>" />
+            <input type="text" class="form-control" id="floatingName" name="full_name" placeholder="Name" value="<?php echo $edit_user['full_name'] ?>">
+            <label for="floatingName">Name</label>
+        </div>
+        <div class="form-row">
+            <input type="text" class="form-control" id="floatingInput" name="username" placeholder="Username" value="<?php echo $edit_user['username'] ?>">
+            <label for="floatingInput">Username</label>
+        </div>
+        <div class="form-row">
+            <input type="password" class="form-control" id="floatingPassword" name="pass" placeholder="Password">
+            <label for="floatingPassword">Password</label>
+        </div>
+        <div class="form-row">
+            <button type="submit" class="btn btn-primary">Save changes</button>
+        </div> -->
+        <!-- <p>Don't have an account? <a href="http://localhost/codeigniter/public/registration">Register Here</a></p> -->
+    <!-- </form>
+</body>
+</html>
+
+<div class="mb-3">
+    <h2>Edit user</h2>
+    <?php echo form_open('process/update_user') ?>
+    <input type="hidden" name="id" value="<?php echo $edit_user['id'] ?>" />
+    <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="floatingName" name="full_name" placeholder="Name" value="<?php echo $edit_user['full_name'] ?>">
+        <label for="floatingName">Name</label>
+    </div>
+    <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="floatingInput" name="username" placeholder="Username" value="<?php echo $edit_user['username'] ?>">
+        <label for="floatingInput">Username</label>
+    </div>
+    <div class="form-floating mb-3">
+        <input type="password" class="form-control" id="floatingPassword" name="pass" placeholder="Password">
+        <label for="floatingPassword">Password</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Save changes</button>
+    <?php echo form_close(); ?>
+</div> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header class="p-3 mb-3 border-bottom">
+        
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+              <i class="bi-bootstrap me-2"></i>
+            </a>
+
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <li><a href="#" class="nav-link px-2 link-secondary">Dashboard</a></li>
+              <li><a href="<?php echo site_url('users') ?>" class="nav-link px-2 link-dark">Users</a></li>
+            </ul>
+
+            <div class="dropdown text-end">
+              <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="<?php echo "https://i.pravatar.cc/150?u=" . $user['username']; ?>" alt="mdo" width="32" height="32" class="rounded-circle">
+              </a>
+              <ul class="dropdown-menu text-small">
+                <li><a class="dropdown-item" href="about">About</a></li>
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="<?php echo site_url('logout') ?>">Sign out</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+</body>
+</html>
